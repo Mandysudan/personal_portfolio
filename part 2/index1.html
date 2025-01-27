@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox and Grid Demo</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 10px;
+      max-width: 800px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: white;
+    }
+
+    /* Flexbox Styling */
+    .flexbox-container {
+      display: flex; /* Activate Flexbox */
+      justify-content: space-around; /* Space items evenly */
+      align-items: center; /* Center items vertically */
+      gap: 10px; /* Space between items */
+    }
+
+    .flexbox-item {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      flex: 1; /* Make items grow evenly */
+    }
+
+    /* Grid Styling */
+    .grid-container {
+      display: grid; /* Activate Grid */
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+      gap: 10px; /* Space between grid items */
+    }
+
+    .grid-item {
+      background-color: #28A745;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Flexbox and Grid View</h1>
+
+  <!-- Flexbox Section -->
+  <section class="flexbox-section">
+    <h2>Flexbox Layout</h2>
+    <div class="flexbox-container">
+      <div class="flexbox-item">1</div>
+      <div class="flexbox-item">2</div>
+      <div class="flexbox-item">3</div>
+    </div>
+  </section>
+
+  <!-- Grid Section -->
+  <section class="grid-section">
+    <h2>Grid Layout</h2>
+    <div class="grid-container">
+      <div class="grid-item">A</div>
+      <div class="grid-item">B</div>
+      <div class="grid-item">C</div>
+      <div class="grid-item">D</div>
+    </div>
+  </section>
+</body>
+</html>

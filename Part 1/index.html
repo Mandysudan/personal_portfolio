@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandeep Kour - Portfolio</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Flexbox for Resume Section */
+    .resume {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .resume-item {
+      flex: 1 1 calc(50% - 20px);
+      background-color: #28A745;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    /* Grid for Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .project-item {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .project-item:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Mandeep Kour</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Mandeep Kour, a passionate developer with expertise in database administration, development, and web technologies like HTML, CSS, and JavaScript. 
+      My goal is to deliver robust and secure solutions for modern-day challenges.
+    </p>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div class="resume">
+      <div class="resume-item">
+        <h3>Education</h3>
+        <p>
+          <strong>Loyalist College</strong><br>
+          Graduate Certificate in Computer Science and Database Development<br>
+          January 2024 – Present
+        </p>
+        <p>
+          <strong>Eternal University, India</strong><br>
+          Bachelor's in Computer Science and Technology<br>
+          August 2015 – June 2019
+        </p>
+      </div>
+      <div class="resume-item">
+        <h3>Experience</h3>
+        <p>
+          <strong>Appliance Repair Team</strong><br>
+          Customer Executive<br>
+          July 2024 – Present
+        </p>
+        <p>
+          <strong>A&W, Kitchener</strong><br>
+          Cashier and Cook<br>
+          Managed orders, customer service, and food preparation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-item">Database Security System for Cozy Cat Cafe</div>
+      <div class="project-item">To-Do List Application using JavaScript</div>
+      <div class="project-item">Inventory Management System (Oracle)</div>
+      <div class="project-item">HTML, CSS, and JavaScript Responsive Website</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mandeepkour3105@gmail.com">mandeepkour3105@gmail.com</a></p>
+    <p>Phone: 437-933-3105</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mandeep Kour. All rights reserved.</p>
+  </footer>
+</body>
+</html>
